@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPDF Reader - Privacy Policy | 隐私政策</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0066FF;
+            --primary-light: #E8F1FF;
+            --primary-dark: #0052CC;
+            --bg-main: #FAFBFC;
+            --bg-card: #FFFFFF;
+            --text-primary: #1A1A2E;
+            --text-secondary: #5A5A7A;
+            --text-muted: #8A8AA3;
+            --border: #E8E8F0;
+            --accent-green: #00C48C;
+            --accent-orange: #FF9F43;
+            --accent-red: #FF6B6B;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.06);
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.08);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(20px);
+            background: rgba(255,255,255,0.9);
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary) 0%, #00C2FF 100%);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,102,255,0.25);
+        }
+
+        .logo-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: white;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: -0.3px;
+        }
+
+        .lang-switch {
+            display: flex;
+            background: var(--bg-main);
+            border-radius: 100px;
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: var(--text-secondary);
+            font-family: inherit;
+        }
+
+        .lang-btn.active {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .lang-btn:hover:not(.active) {
+            color: var(--text-primary);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%);
+            padding: 60px 24px 40px;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .update-date {
+            margin-top: 16px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Main Content */
+        .main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 24px 80px;
+        }
+
+        /* Summary Cards */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .summary-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .summary-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .summary-card .icon {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+
+        .summary-card.green .icon { background: #E8FFF5; }
+        .summary-card.blue .icon { background: var(--primary-light); }
+        .summary-card.orange .icon { background: #FFF4E8; }
+
+        .summary-card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .summary-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Content Sections */
+        .section {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .section-header {
+            padding: 24px 28px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .section-header:hover {
+            background: var(--bg-main);
+        }
+
+        .section-number {
+            width: 32px;
+            height: 32px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .section-title {
+            font-size: 17px;
+            font-weight: 600;
+            flex: 1;
+        }
+
+        .section-toggle {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--bg-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .section.open .section-toggle {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            padding: 0 28px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .section.open .section-content {
+            padding: 24px 28px;
+            max-height: 2000px;
+        }
+
+        .section-content h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 20px 0 12px;
+        }
+
+        .section-content h4:first-child {
+            margin-top: 0;
+        }
+
+        .section-content p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .section-content ul {
+            margin: 12px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .section-content li {
+            font-size: 15px;
+            color: var(--text-secondary);
+            padding: 8px 0 8px 28px;
+            position: relative;
+        }
+
+        .section-content li::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 16px;
+            width: 6px;
+            height: 6px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .highlight-box {
+            background: var(--primary-light);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-left: 3px solid var(--primary);
+        }
+
+        .highlight-box p {
+            color: var(--primary-dark);
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid var(--border);
+            background: var(--bg-card);
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Language specific */
+        .lang-en, .lang-zh { display: none; }
+        body.en .lang-en { display: block; }
+        body.zh .lang-zh { display: block; }
+        body.en .lang-en-inline { display: inline; }
+        body.zh .lang-zh-inline { display: inline; }
+        body.en .lang-zh-inline { display: none; }
+        body.zh .lang-en-inline { display: none; }
+
+        /* Mobile */
+        @media (max-width: 640px) {
+            .header-inner {
+                padding: 12px 16px;
+            }
+            .logo-text {
+                display: none;
+            }
+            .hero {
+                padding: 40px 16px 30px;
+            }
+            .main {
+                padding: 16px 16px 60px;
+            }
+            .section-header {
+                padding: 20px;
+            }
+            .section.open .section-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="en">
+    <header class="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z"/><path d="M8 12h8v2H8zm0 4h8v2H8z"/></svg>
+                </div>
+                <span class="logo-text">SmartPDF Reader</span>
+            </a>
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-badge">
+            <span class="lang-en-inline">🔒 Privacy Policy</span>
+            <span class="lang-zh-inline">🔒 隐私政策</span>
+        </div>
+        <h1>
+            <span class="lang-en-inline">App Privacy</span>
+            <span class="lang-zh-inline">应用隐私</span>
+        </h1>
+        <p>
+            <span class="lang-en-inline">We respect your privacy. Learn how SmartPDF Reader handles your data.</span>
+            <span class="lang-zh-inline">我们尊重您的隐私。了解 SmartPDF Reader 如何处理您的数据。</span>
+        </p>
+        <div class="update-date">
+            <span class="lang-en-inline">Last updated: January 2025</span>
+            <span class="lang-zh-inline">最后更新：2025年1月</span>
+        </div>
+    </section>
+
+    <main class="main">
+        <!-- Summary Cards -->
+        <div class="summary-grid">
+            <div class="summary-card green">
+                <div class="icon">✓</div>
+                <h3>
+                    <span class="lang-en-inline">Local Processing</span>
+                    <span class="lang-zh-inline">本地处理</span>
+                </h3>
+                <p>
+                    <span class="lang-en-inline">Your PDF files are processed locally on your device.</span>
+                    <span class="lang-zh-inline">您的 PDF 文件在本地设备上处理。</span>
+                </p>
+            </div>
+            <div class="summary-card blue">
+                <div class="icon">🔑</div>
+                <h3>
+                    <span class="lang-en-inline">Your API Keys</span>
+                    <span class="lang-zh-inline">您的 API 密钥</span>
+                </h3>
+                <p>
+                    <span class="lang-en-inline">API keys are stored only on your device, never on our servers.</span>
+                    <span class="lang-zh-inline">API 密钥仅存储在您的设备上，绝不会上传到我们的服务器。</span>
+                </p>
+            </div>
+            <div class="summary-card orange">
+                <div class="icon">🚫</div>
+                <h3>
+                    <span class="lang-en-inline">No Tracking</span>
+                    <span class="lang-zh-inline">无追踪</span>
+                </h3>
+                <p>
+                    <span class="lang-en-inline">We don't collect analytics or track your usage behavior.</span>
+                    <span class="lang-zh-inline">我们不收集分析数据，也不追踪您的使用行为。</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="section open">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-number">1</div>
+                <div class="section-title">
+                    <span class="lang-en-inline">Information We Collect</span>
+                    <span class="lang-zh-inline">我们收集的信息</span>
+                </div>
+                <div class="section-toggle">
+                    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="lang-en">
+                    <h4>Data Stored Locally on Your Device</h4>
+                    <ul>
+                        <li><strong>API Keys:</strong> Your Gemini API key and Deepseek API key are stored locally using macOS UserDefaults. These keys never leave your device and are not transmitted to our servers.</li>
+                        <li><strong>App Preferences:</strong> Language settings and other preferences are stored locally on your device.</li>
+                        <li><strong>PDF Files:</strong> All PDF files you open are processed entirely on your device. We do not upload or store your documents.</li>
+                    </ul>
+                    <h4>Data We Do NOT Collect</h4>
+                    <ul>
+                        <li>Personal identification information</li>
+                        <li>Usage analytics or behavior tracking</li>
+                        <li>Document contents or metadata</li>
+                        <li>Device identifiers or location data</li>
+                    </ul>
+                </div>
+                <div class="lang-zh">
+                    <h4>存储在您设备上的数据</h4>
+                    <ul>
+                        <li><strong>API 密钥：</strong>您的 Gemini API 密钥和 Deepseek API 密钥使用 macOS UserDefaults 存储在本地。这些密钥不会离开您的设备，也不会传输到我们的服务器。</li>
+                        <li><strong>应用偏好设置：</strong>语言设置和其他偏好设置存储在您的设备本地。</li>
+                        <li><strong>PDF 文件：</strong>您打开的所有 PDF 文件都完全在您的设备上处理。我们不会上传或存储您的文档。</li>
+                    </ul>
+                    <h4>我们不收集的数据</h4>
+                    <ul>
+                        <li>个人身份信息</li>
+                        <li>使用分析或行为追踪</li>
+                        <li>文档内容或元数据</li>
+                        <li>设备标识符或位置数据</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-number">2</div>
+                <div class="section-title">
+                    <span class="lang-en-inline">Third-Party AI Services</span>
+                    <span class="lang-zh-inline">第三方 AI 服务</span>
+                </div>
+                <div class="section-toggle">
+                    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="lang-en">
+                    <p>SmartPDF Reader integrates with third-party AI services to provide intelligent document assistance. When you use these features:</p>
+                    <h4>Google Gemini API</h4>
+                    <ul>
+                        <li>PDF content and your questions are sent directly to Google's Gemini API</li>
+                        <li>Images you upload for analysis are sent to Google's servers</li>
+                        <li>Your API key is used for authentication</li>
+                        <li>Data handling is governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></li>
+                    </ul>
+                    <h4>Deepseek API</h4>
+                    <ul>
+                        <li>PDF content and your questions are sent directly to Deepseek's API</li>
+                        <li>Your API key is used for authentication</li>
+                        <li>Data handling is governed by <a href="https://www.deepseek.com/privacy" target="_blank">Deepseek's Privacy Policy</a></li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>Important:</strong> We do not have access to the data you send to these third-party services. Your conversations go directly from your device to their servers using your own API keys.</p>
+                    </div>
+                </div>
+                <div class="lang-zh">
+                    <p>SmartPDF Reader 集成了第三方 AI 服务以提供智能文档助手功能。当您使用这些功能时：</p>
+                    <h4>Google Gemini API</h4>
+                    <ul>
+                        <li>PDF 内容和您的问题会直接发送到 Google 的 Gemini API</li>
+                        <li>您上传用于分析的图片会发送到 Google 的服务器</li>
+                        <li>使用您的 API 密钥进行身份验证</li>
+                        <li>数据处理受 <a href="https://policies.google.com/privacy" target="_blank">Google 隐私政策</a>约束</li>
+                    </ul>
+                    <h4>Deepseek API</h4>
+                    <ul>
+                        <li>PDF 内容和您的问题会直接发送到 Deepseek 的 API</li>
+                        <li>使用您的 API 密钥进行身份验证</li>
+                        <li>数据处理受 <a href="https://www.deepseek.com/privacy" target="_blank">Deepseek 隐私政策</a>约束</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>重要提示：</strong>我们无法访问您发送给这些第三方服务的数据。您的对话直接从您的设备使用您自己的 API 密钥发送到他们的服务器。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-number">3</div>
+                <div class="section-title">
+                    <span class="lang-en-inline">Data Security</span>
+                    <span class="lang-zh-inline">数据安全</span>
+                </div>
+                <div class="section-toggle">
+                    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="lang-en">
+                    <p>We take the following measures to protect your data:</p>
+                    <ul>
+                        <li><strong>Local Storage:</strong> All sensitive data (API keys, preferences) are stored locally on your device using macOS secure storage mechanisms.</li>
+                        <li><strong>No Cloud Storage:</strong> We do not operate any cloud servers to store your data.</li>
+                        <li><strong>Secure Transmission:</strong> All communications with third-party AI services use HTTPS encryption.</li>
+                        <li><strong>Sandboxed App:</strong> The app runs in macOS sandbox environment, limiting access to system resources.</li>
+                    </ul>
+                </div>
+                <div class="lang-zh">
+                    <p>我们采取以下措施保护您的数据：</p>
+                    <ul>
+                        <li><strong>本地存储：</strong>所有敏感数据（API 密钥、偏好设置）都使用 macOS 安全存储机制存储在您的设备本地。</li>
+                        <li><strong>无云存储：</strong>我们不运营任何云服务器来存储您的数据。</li>
+                        <li><strong>安全传输：</strong>与第三方 AI 服务的所有通信都使用 HTTPS 加密。</li>
+                        <li><strong>沙盒应用：</strong>应用在 macOS 沙盒环境中运行，限制对系统资源的访问。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-number">4</div>
+                <div class="section-title">
+                    <span class="lang-en-inline">Your Rights & Choices</span>
+                    <span class="lang-zh-inline">您的权利和选择</span>
+                </div>
+                <div class="section-toggle">
+                    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="lang-en">
+                    <p>You have full control over your data:</p>
+                    <ul>
+                        <li><strong>Delete API Keys:</strong> You can remove your API keys at any time from the app settings.</li>
+                        <li><strong>Clear Preferences:</strong> Uninstalling the app will remove all locally stored data.</li>
+                        <li><strong>Opt-out of AI Features:</strong> You can use the PDF viewer without configuring any AI services.</li>
+                        <li><strong>Data Portability:</strong> Since all data is stored locally, you have direct access to it.</li>
+                    </ul>
+                </div>
+                <div class="lang-zh">
+                    <p>您可以完全控制您的数据：</p>
+                    <ul>
+                        <li><strong>删除 API 密钥：</strong>您可以随时在应用设置中删除您的 API 密钥。</li>
+                        <li><strong>清除偏好设置：</strong>卸载应用将删除所有本地存储的数据。</li>
+                        <li><strong>退出 AI 功能：</strong>您可以在不配置任何 AI 服务的情况下使用 PDF 阅读器。</li>
+                        <li><strong>数据可携带性：</strong>由于所有数据都存储在本地，您可以直接访问它。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-number">5</div>
+                <div class="section-title">
+                    <span class="lang-en-inline">Children's Privacy</span>
+                    <span class="lang-zh-inline">儿童隐私</span>
+                </div>
+                <div class="section-toggle">
+                    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="lang-en">
+                    <p>SmartPDF Reader is not directed at children under the age of 13. We do not knowingly collect personal information from children. Since we don't collect any personal data from any users, this policy applies equally to all age groups.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>SmartPDF Reader 不针对 13 岁以下的儿童。我们不会故意收集儿童的个人信息。由于我们不收集任何用户的个人数据，此政策同样适用于所有年龄段。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-number">6</div>
+                <div class="section-title">
+                    <span class="lang-en-inline">Changes to This Policy</span>
+                    <span class="lang-zh-inline">政策变更</span>
+                </div>
+                <div class="section-toggle">
+                    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="lang-en">
+                    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+                    <p>We recommend reviewing this Privacy Policy periodically for any changes.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>我们可能会不时更新本隐私政策。我们将通过在此页面发布新的隐私政策并更新"最后更新"日期来通知您任何更改。</p>
+                    <p>我们建议您定期查看本隐私政策以了解任何更改。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-number">7</div>
+                <div class="section-title">
+                    <span class="lang-en-inline">Contact Us</span>
+                    <span class="lang-zh-inline">联系我们</span>
+                </div>
+                <div class="section-toggle">
+                    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="lang-en">
+                    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                    <ul>
+                        <li><strong>Email:</strong> support@smartpdfreader.app</li>
+                    </ul>
+                </div>
+                <div class="lang-zh">
+                    <p>如果您对本隐私政策有任何疑问，请联系我们：</p>
+                    <ul>
+                        <li><strong>邮箱：</strong>support@smartpdfreader.app</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 SmartPDF Reader. 
+            <span class="lang-en-inline">All rights reserved.</span>
+            <span class="lang-zh-inline">保留所有权利。</span>
+        </p>
+    </footer>
+
+    <script>
+        // Language switching
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const lang = this.dataset.lang;
+                document.body.className = lang;
+                document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                localStorage.setItem('preferred-lang', lang);
+            });
+        });
+
+        // Load preferred language
+        const savedLang = localStorage.getItem('preferred-lang');
+        if (savedLang) {
+            document.body.className = savedLang;
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === savedLang);
+            });
+        }
+
+        // Section toggle
+        function toggleSection(header) {
+            const section = header.parentElement;
+            section.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
