@@ -1,0 +1,432 @@
+[
+  {
+    "path": ".gitignore",
+    "sha256": "a826b8f695bbd8ccc04b29b21bc60596c15555f4f3307b19016def77077050ee",
+    "bytes": 202
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "08a95352345b73734706d4a173161ca5f60f4b0889e413e11957debdf38598cd",
+    "bytes": 1070
+  },
+  {
+    "path": "PRIVACY.md",
+    "sha256": "17b74d9386f2270e51bf2236de6cc5b25a34878eff2cab7b7e6f7ec831c91336",
+    "bytes": 6880
+  },
+  {
+    "path": "README.md",
+    "sha256": "17b3cac526bd0e93dfae70e67b1760f10e7c70886db7dc30d818fd0f2b904e42",
+    "bytes": 5346
+  },
+  {
+    "path": "SmartPDFReader/AIChatSidebar.swift",
+    "sha256": "aa4b8f58e13112c9aa269a2e47075756bb412443daf8b8d2e0b383c3e4d7ddcc",
+    "bytes": 34679
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AIToolbarIcon.imageset/Contents.json",
+    "sha256": "0df9f2e5bf3c5458bd86d941792f1907c39cc9f4a848de2de35e306bf6e46f2f",
+    "bytes": 472
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AIToolbarIcon.imageset/ai_toolbar_icon.png",
+    "sha256": "442d72cf61ee953d32d05d0a282f403f2918ba7b6c7b5cd1bcd6eaea2b5aa75d",
+    "bytes": 1462
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AIToolbarIcon.imageset/ai_toolbar_icon@2x.png",
+    "sha256": "b90c1f62950018958ebdf7f37cd4ba9cc0676b9dcdc5dc249f32fa9e40057798",
+    "bytes": 3080
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AIToolbarIcon.imageset/ai_toolbar_icon@3x.png",
+    "sha256": "00651a09ef29b98fcf9827216f552be9c5c5836eab230136aefc133ffd07f7ce",
+    "bytes": 4892
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AccentColor.colorset/Contents.json",
+    "sha256": "9af65086fa30b49252fae1a1225731691de794f7775af74d71befeb507d12b7c",
+    "bytes": 123
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/Contents.json",
+    "sha256": "fd62c72482a200be31beefeacd22582182828322e523947c8d778ac34d4f1c1b",
+    "bytes": 1301
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/icon_128x128.png",
+    "sha256": "15b22c5dd550f3f5d08ca7f86c9c3da193b3ffd1ec60da6bdfae71ddaab7d9c8",
+    "bytes": 7411
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/icon_128x128@2x.png",
+    "sha256": "bba29a36c05515382ad6ba4975b772146293f3a63c1b9b4dd379c02d66b7e2c7",
+    "bytes": 15999
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/icon_16x16.png",
+    "sha256": "4d7c123351f386fa8bd971606581673276921cee98a6bd4938dac3e4028f3c61",
+    "bytes": 771
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/icon_16x16@2x.png",
+    "sha256": "9b47df9fe6c83bccc5ab5e9fde402997b1c2a0fd366e35ae68ca2a007fa17373",
+    "bytes": 1570
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/icon_256x256.png",
+    "sha256": "bba29a36c05515382ad6ba4975b772146293f3a63c1b9b4dd379c02d66b7e2c7",
+    "bytes": 15999
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/icon_256x256@2x.png",
+    "sha256": "01f50a006c997d60661b9d23e3314c2615288895b30aec845682a98c672bf5d5",
+    "bytes": 35525
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/icon_32x32.png",
+    "sha256": "9b47df9fe6c83bccc5ab5e9fde402997b1c2a0fd366e35ae68ca2a007fa17373",
+    "bytes": 1570
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/icon_32x32@2x.png",
+    "sha256": "4e66b46ec4aa5dce03a6f25df7e78f0e1226bb3600fc200c28d77f60ff877fba",
+    "bytes": 3235
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/icon_512x512.png",
+    "sha256": "01f50a006c997d60661b9d23e3314c2615288895b30aec845682a98c672bf5d5",
+    "bytes": 35525
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/AppIcon.appiconset/icon_512x512@2x.png",
+    "sha256": "d5e7679e804074240642bd170022d31cbe8038038698161f84e48ec2606b75b9",
+    "bytes": 83654
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/Contents.json",
+    "sha256": "0fd49ba3c3585c709678e0046a821c3c60685ec7063720d30d3a3448be3a208b",
+    "bytes": 63
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/DocumentIcon.imageset/Contents.json",
+    "sha256": "cede02535cba63b1917354590bd2279df09536b465cf5bc5a17c4b7d3880fcfd",
+    "bytes": 354
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/DocumentIcon.imageset/document_icon.png",
+    "sha256": "b244387c3b26fdf3508af72e239f64beb94c3d68548e63e607e7a1a4d2b14f06",
+    "bytes": 51834
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/DocumentIcon.imageset/document_icon@2x.png",
+    "sha256": "6048cacf3cec6fff73c7318461c780075e598072a52ae352741ad7cf975306c9",
+    "bytes": 176454
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/SmallIcon.imageset/Contents.json",
+    "sha256": "4bde31acfb5e6c607a5f6de966986ec5c551570abb948bfc63cd409c62451664",
+    "bytes": 388
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/SmallIcon.imageset/small_icon.png",
+    "sha256": "8e6d95bdc028f2a66ba4a2ff4e75e66b21a197ba45faee37584c021878922e11",
+    "bytes": 2200
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/SmallIcon.imageset/small_icon@2x.png",
+    "sha256": "4542d305460b80aa18f1c241785d2732418057554c1cf6627a0ed42ad706b8c0",
+    "bytes": 5027
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/SmallIcon.imageset/small_icon@3x.png",
+    "sha256": "4f836e5607a48bb1c3af238effe50b14bcc87fcd24c35eaad6015d62b7a75da1",
+    "bytes": 8897
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/ToolbarIcon.imageset/Contents.json",
+    "sha256": "a8a776e722bc2580c489d76809c68fbf7f36e7c7a528b2ee4e589a7e27a532c5",
+    "bytes": 277
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/ToolbarIcon.imageset/toolbar_icon.png",
+    "sha256": "d80aad3a2c037d61efa4689df14614d736a1451efbaca82c83f2a481c6a509ae",
+    "bytes": 1594
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/ToolbarIcon.imageset/toolbar_icon@2x.png",
+    "sha256": "10b961e5f2524437604599ad1b722a9a8a4255168dcacf2e6f4e454b39436e9e",
+    "bytes": 2884
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/ToolbarIconSmall.imageset/Contents.json",
+    "sha256": "62ac7525a2e6ea00ac30a7adae5b6b215d88ddcc7d467cdc176e261225fc538f",
+    "bytes": 279
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/ToolbarIconSmall.imageset/toolbar_small.png",
+    "sha256": "9be468a80cb150d57edc1dd868173fe85a92843dac2ce052b91331386eae3477",
+    "bytes": 1282
+  },
+  {
+    "path": "SmartPDFReader/Assets.xcassets/ToolbarIconSmall.imageset/toolbar_small@2x.png",
+    "sha256": "769830dddfb7379ac7e42ead99eb779f0ebb1eaaa9b340325fd1537857b984d7",
+    "bytes": 2007
+  },
+  {
+    "path": "SmartPDFReader/ChatGPTClient.swift",
+    "sha256": "b49b9e4c2ef55766e5990a13061379d9b08bc6d93ea33ea86ac55900e503cb54",
+    "bytes": 20456
+  },
+  {
+    "path": "SmartPDFReader/ChatGPTPlanAuth.swift",
+    "sha256": "7019e9eabc45b93d0395db8c2e6a2d58ecb78d680515b908ed6e77b1e942abe6",
+    "bytes": 13796
+  },
+  {
+    "path": "SmartPDFReader/ChatGPTService.swift",
+    "sha256": "2e912c2fc476ea3567d5939ee88d137596304a3a70f97cfa951fb2866d5608ca",
+    "bytes": 14308
+  },
+  {
+    "path": "SmartPDFReader/ChatMarkdown.swift",
+    "sha256": "a199d9f76b40fbb7f8a99570cba70b8c36476df666c3ad35ec5137141681daee",
+    "bytes": 2695
+  },
+  {
+    "path": "SmartPDFReader/ContentView.swift",
+    "sha256": "35c589045db6526a2e8416e380acc744598de6ee796c70d2aa552dc0865db353",
+    "bytes": 31207
+  },
+  {
+    "path": "SmartPDFReader/Info.plist",
+    "sha256": "63dcad72e47eedbe21102b31261f753cf19cb946d0b5b3982e89db677a005228",
+    "bytes": 1450
+  },
+  {
+    "path": "SmartPDFReader/LeftSidebarView.swift",
+    "sha256": "d130643bb0964eae0a14194ad142f68dd896edf2cd09461d47ed557761e842e7",
+    "bytes": 31722
+  },
+  {
+    "path": "SmartPDFReader/License.txt",
+    "sha256": "08a95352345b73734706d4a173161ca5f60f4b0889e413e11957debdf38598cd",
+    "bytes": 1070
+  },
+  {
+    "path": "SmartPDFReader/LocalizationManager.swift",
+    "sha256": "d440e654763194adb4a22434b6e45f489b3311ee97ef327b34ede4c10e018846",
+    "bytes": 18453
+  },
+  {
+    "path": "SmartPDFReader/MenuBarPopoverView.swift",
+    "sha256": "b58a5586f0d51cd785640056309d5a28de971afd91cd7a342140f4d759c2d40e",
+    "bytes": 2352
+  },
+  {
+    "path": "SmartPDFReader/PDFDocument.icns",
+    "sha256": "6258ea4c00b6cfa023717d45d5233361b0d47ca6c1974e3ad1b7cdc58b5a4a93",
+    "bytes": 1048550
+  },
+  {
+    "path": "SmartPDFReader/PDFKitView.swift",
+    "sha256": "8d6e39caca4374a851837389dc780473042af8e78090609a533733ae07a91f2b",
+    "bytes": 196853
+  },
+  {
+    "path": "SmartPDFReader/PDFReferenceIndex.swift",
+    "sha256": "3516c57fc5cbb11c4ab48c80b62f7cb4f9bc1216a3254b3bf77e948e287663c5",
+    "bytes": 5349
+  },
+  {
+    "path": "SmartPDFReader/PlanCredentialStore.swift",
+    "sha256": "0eac4cb3a9b0516aa8ba8f91093f135b66e26c73db334c978d319b921315c57c",
+    "bytes": 3415
+  },
+  {
+    "path": "SmartPDFReader/PlanPrivacy.swift",
+    "sha256": "525f6e6cf69642fb78245fd782503f023aed40bc27749eead0556f68b501874b",
+    "bytes": 1537
+  },
+  {
+    "path": "SmartPDFReader/PopoverContentView.swift",
+    "sha256": "80bf1342969bcfd8c77643040fe885d7bc737de43b7d479fe804b0232872443f",
+    "bytes": 525
+  },
+  {
+    "path": "SmartPDFReader/PrivacyInfo.xcprivacy",
+    "sha256": "d13f440399c45d882653bee72393f3cf2e17620769e4098455dac4bdeba84508",
+    "bytes": 2349
+  },
+  {
+    "path": "SmartPDFReader/ReadablePDFTextAnnotation.swift",
+    "sha256": "58e47a00d7c9704928eec5a198437fa86085dc52fd20e635cff6a54ac386510d",
+    "bytes": 4004
+  },
+  {
+    "path": "SmartPDFReader/ScopedFileAccess.swift",
+    "sha256": "990688088dfb6787a85809e31efee79f48efba1a114dfe7e568a8c9075b90231",
+    "bytes": 357
+  },
+  {
+    "path": "SmartPDFReader/SettingsView.swift",
+    "sha256": "b70b58e2ef537738dd295d3ffbf3850dca3f81e983e41ad8c29c9f6619907248",
+    "bytes": 8874
+  },
+  {
+    "path": "SmartPDFReader/SidebarPet.swift",
+    "sha256": "1a7f16577244e51666df24f7567e1bc68b0af2f5c4a5232472e1a9db1fb11045",
+    "bytes": 7102
+  },
+  {
+    "path": "SmartPDFReader/SmartPDFReader.entitlements",
+    "sha256": "fa5d82a612df9adfa9e8bcea98a78842e589575fc48e5ab5939a04a93c3f6c2c",
+    "bytes": 234
+  },
+  {
+    "path": "SmartPDFReader/SmartPDFReaderApp.swift",
+    "sha256": "d8216f7559d627df1af3b1b716225598c0126d337f4c474389e39b4f796dfbe2",
+    "bytes": 25636
+  },
+  {
+    "path": "SmartPDFReader/StoreChatGPTClient.swift",
+    "sha256": "6b2a36eedf1fce350619ad2396b0c3193a153beb4ba17eb5620a4afc4ef0246a",
+    "bytes": 27561
+  },
+  {
+    "path": "SmartPDFReader/Theme.swift",
+    "sha256": "8dcf10c335c45a5448e15d093a16951f4640bd3abfa14bc0ed249699061cd814",
+    "bytes": 31199
+  },
+  {
+    "path": "scripts/RenderPetIcon.swift",
+    "sha256": "e9a900602cb0d4457167636b7646421735bad43ef92c46286a3b406f80bb00ab",
+    "bytes": 2027
+  },
+  {
+    "path": "scripts/archive-store.sh",
+    "sha256": "ed1dee4f81406048dbe138af6a9f1daa7554fb51ebd73f871aead35ab5abdfa3",
+    "bytes": 636
+  },
+  {
+    "path": "scripts/build-local.sh",
+    "sha256": "b1f2188e985bc45da15a5e9b70fcf984106261d3b6b458ab7582fdbef0e08178",
+    "bytes": 3881
+  },
+  {
+    "path": "scripts/package-source.py",
+    "sha256": "8f6ce436d74f7c116b7f8bb4d96fedf18be95306f962534e0215c6dd793fa1c8",
+    "bytes": 2732
+  },
+  {
+    "path": "scripts/test-annotations.sh",
+    "sha256": "fa1fc6ef1333955492bd32a757178df4273d3083f044b67dd2845e00e858f77e",
+    "bytes": 1925
+  },
+  {
+    "path": "scripts/test-local.sh",
+    "sha256": "57e08e4f9651f96ac0841cb23ecb41c0fbbb9f2eda2038b2a17fa645becc7b7e",
+    "bytes": 929
+  },
+  {
+    "path": "scripts/test-store.sh",
+    "sha256": "858aaa4ae599a498280fea103170b17bcd0b01efd0fba725022830490673fcae",
+    "bytes": 913
+  },
+  {
+    "path": "Tests/AnnotationTests.swift",
+    "sha256": "dbe2fee949d411206472bfa5658cc3711866f080a18d2898126343ab50306157",
+    "bytes": 14472
+  },
+  {
+    "path": "Tests/IntegrationTests.swift",
+    "sha256": "1254b0a547feaeacc4efaacccf9a518c491d46384b54702c92bbababfd7ff972",
+    "bytes": 12581
+  },
+  {
+    "path": "Tests/StoreTests.swift",
+    "sha256": "5418e6778eebb0b3361575e6ba5179aeaad4100b030418f7a9cde8909964276e",
+    "bytes": 14160
+  },
+  {
+    "path": "Tests/fake-codex.py",
+    "sha256": "a1d3093fb86b8bc88277ee146bf1963913c01cebef842b5ba70f1b43fa5b136b",
+    "bytes": 5623
+  },
+  {
+    "path": "SmartPDFReader.xcodeproj/project.pbxproj",
+    "sha256": "51aea7b4fd9ef9c3d2262d370e28590ac6c765d862746f30b3baf3a5dd4f31f2",
+    "bytes": 13058
+  },
+  {
+    "path": "SmartPDFReader.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+    "sha256": "7f3b00b5c3fdb45242d7b87e1e5c4e25d1fa8129a16c94295ecc4e8ea2235c5f",
+    "bytes": 135
+  },
+  {
+    "path": "SmartPDFReader.xcodeproj/xcshareddata/xcschemes/iSmartPDFReader-Store.xcscheme",
+    "sha256": "421c3c0bb9ffaeb789c82a1cc0d0fda4baa3634198d13ec25a868b5a3c9fd4ec",
+    "bytes": 1674
+  },
+  {
+    "path": "AppStore/Info.plist",
+    "sha256": "248cdf85fd9376ad93651d3e2ee5d2d519991ce557203af682a2a12eac427738",
+    "bytes": 1518
+  },
+  {
+    "path": "AppStore/Release.xcconfig",
+    "sha256": "b0789258fe1565f582c9e73e839d6241219a6eb5f7da1f62dfc722eecc56cb9f",
+    "bytes": 695
+  },
+  {
+    "path": "AppStore/ExportOptions.plist",
+    "sha256": "fa4119b052514816fcf339bb4c8fd4aebaeeae41be1dae5183859bd84d900c9b",
+    "bytes": 481
+  },
+  {
+    "path": "AppStore/iSmartPDFReader.entitlements",
+    "sha256": "0f3ccfec7aecad9750541c029444fc22043e28d6ad96ee278acdc0721a5f3592",
+    "bytes": 421
+  },
+  {
+    "path": "AppStore/metadata/en-US/description.txt",
+    "sha256": "25fc40f87def2b12a9ff6275cf93d08e27e87e56e668483a8ae9bcd3f28dd765",
+    "bytes": 1788
+  },
+  {
+    "path": "AppStore/metadata/en-US/keywords.txt",
+    "sha256": "f6146f70b799622aa7e63e2c9204e6a6d7c4d6ae89a47e5247b22af1246b02a2",
+    "bytes": 59
+  },
+  {
+    "path": "AppStore/metadata/en-US/release_notes.txt",
+    "sha256": "3f950f25ba853456f86c0e9acaafc3b008856a8857281a049b405b5890409728",
+    "bytes": 1272
+  },
+  {
+    "path": "AppStore/metadata/en-US/subtitle.txt",
+    "sha256": "bbc9da1cb45a28b993b62e137fffd1401adf9fe8212da0083ec573e0eb4ef3c7",
+    "bytes": 27
+  },
+  {
+    "path": "AppStore/metadata/zh-Hans/description.txt",
+    "sha256": "1e526d8cd460f4a47db19638fbf2960f3cc0253235725a0b9e345ccf95b4d046",
+    "bytes": 1545
+  },
+  {
+    "path": "AppStore/metadata/zh-Hans/keywords.txt",
+    "sha256": "6d60a82b191725098cad0767d4377cc54e3a8d2f587d7cd6f3a6806f9ab2a688",
+    "bytes": 60
+  },
+  {
+    "path": "AppStore/metadata/zh-Hans/release_notes.txt",
+    "sha256": "64f1f659f6388be0b67f3a49cb44a13bded1eb4155a33228325aba9a9bb8e9fd",
+    "bytes": 1124
+  },
+  {
+    "path": "AppStore/metadata/zh-Hans/subtitle.txt",
+    "sha256": "7e66383542847425742d45debc14670d22dafd636067cd1388a936730ad88805",
+    "bytes": 32
+  }
+]
